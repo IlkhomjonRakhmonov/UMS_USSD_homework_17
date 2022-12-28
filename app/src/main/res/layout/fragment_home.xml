@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/ums"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserratsemibold"
+        android:text="UMS"
+        android:layout_marginLeft="10dp"
+        android:textColor="#FF0000"
+        android:textSize="150sp"
+        app:layout_constraintBottom_toTopOf="@id/daqiqa"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:id="@+id/tarif"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/tariflar"
+
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/daqiqa"
+        app:layout_constraintTop_toBottomOf="@id/ums"
+        app:layout_constraintBottom_toTopOf="@id/tariftxt"/>
+
+
+    <TextView
+        android:id="@+id/tariftxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserratsemibold"
+        android:text="TARIFLAR"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+
+        app:layout_constraintBottom_toTopOf="@id/internet"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/daqiqatxt"
+        app:layout_constraintTop_toBottomOf="@id/tarif" />
+
+
+    <TextView
+        android:id="@+id/daqiqatxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserratsemibold"
+        android:text="DAQIQA"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+
+        app:layout_constraintBottom_toTopOf="@id/news"
+        app:layout_constraintLeft_toRightOf="@id/tariftxt"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/daqiqa" />
+
+
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/daqiqa"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/daqiqalar"
+
+        app:layout_constraintBottom_toTopOf="@id/daqiqatxt"
+        app:layout_constraintLeft_toRightOf="@id/tarif"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ums" />
+    <ImageView
+        android:layout_marginTop="50dp"
+        android:id="@+id/internet"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/internet"
+
+        app:layout_constraintBottom_toTopOf="@id/internet.txt"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/news"
+        app:layout_constraintTop_toBottomOf="@+id/tariftxt" />
+    <TextView
+        android:id="@+id/internet.txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserratsemibold"
+        android:text="INTERNET"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@id/xizmat"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/news.txt"
+        app:layout_constraintTop_toBottomOf="@id/internet" />
+
+    <ImageView
+        android:layout_marginTop="50dp"
+        android:id="@+id/xizmat"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/xizmatlar"
+
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/SMS"
+        app:layout_constraintTop_toBottomOf="@id/internet.txt"
+        app:layout_constraintBottom_toTopOf="@id/xizmat.txt"/>
+
+    <TextView
+        android:id="@+id/xizmat.txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserratsemibold"
+        android:text="XIZMATLAR"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:layout_marginRight="30dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/SMS.txt"
+        app:layout_constraintTop_toBottomOf="@id/xizmat"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <ImageView
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="50dp"
+        android:id="@+id/SMS"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/sms"
+
+
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/xizmat"
+        app:layout_constraintTop_toBottomOf="@id/news.txt"
+        app:layout_constraintBottom_toTopOf="@id/SMS.txt"
+        />
+
+    <TextView
+        android:id="@+id/SMS.txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserratsemibold"
+        android:text="SMS"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+
+        android:layout_marginRight="20dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/xizmat.txt"
+        app:layout_constraintTop_toBottomOf="@id/SMS"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+    <ImageView
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="50dp"
+        android:id="@+id/news"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/yangiliklar"
+
+        app:layout_constraintBottom_toTopOf="@id/news.txt"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/internet"
+        app:layout_constraintTop_toBottomOf="@id/daqiqatxt" />
+
+    <TextView
+        android:id="@+id/news.txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserratsemibold"
+        android:text="YANGILIKLAR"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintBottom_toTopOf="@id/SMS"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/internet.txt"
+        app:layout_constraintTop_toBottomOf="@id/news" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

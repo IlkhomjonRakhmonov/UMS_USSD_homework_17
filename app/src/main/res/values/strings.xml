@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">homework_17</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="_103">*103#</string>
+    <string name="to_plamga_kiritilgan_daqiqalar_60_daqiqa">To\'plamga kiritilgan \n daqiqalar 60 daqiqa</string>
+    <string name="_60_daqiqa"><![CDATA[<<60 daqiqa>>]]></string>
+    <string name="INFO_60">Daqiqalar to\'plamini barcha jismoniy shaxslar uchun mo\'ljallangan tarif rejalarida faollashtirish imkoniyati bor; To\'plamlarga kiritilgan daqiqalar tarmoq ichida, boshqa mobil operator tarmoqlariga va shahar raqamlariga chiquvchi qo\'ng\'iroqlar uchun mo\'ljallangan; To\'plamga kiritilgan daqiqalar hajmi abonent bandlanganligi/bandlanmaganligidan qat\'iy nazar 30 kalendar kuni davomida amal qiladi; To\'plam faollashtirilishi uchun abonent hisobida yetarlicha mablag bo\'lishi shart, ya\'ni u faollashganidan keyin abonent balansida kamida 42,10 so\'m qolishi kerak; To\'plam muvaffaqiyatli faollashganda bu haqida SMS-xabarnoma keladi;</string>
+</resources>
